@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css"/>
+  <link rel="stylesheet" href="./css/grid.css"/>
+  <link rel="stylesheet" href="./css/all.min.css"/>
+  <link rel="stylesheet" href="./css/style.css"/>
+  <link rel="stylesheet" href="./css/styleiago.css"/><!--Custom Styles Here-->
+  <title>OOPFlix | Shows</title>
+</head>
+<body>
+  <main>
+    <nav id="navbar"> <!--Navbar (Done. Don't touch or open)-->
+      <div class="container-no-padding">
+        <div class="top-nav width-10">
+          <ul>
+            <li><a href="./index.html"><img class="logo" src="images/logo.png"></a></li>
+            <li><a href="movies.html"><h5>Movies</h5></a></li>
+            <li><a href="shows.html"><h5>Shows</h5></a></li>
+            
+            <li>
+              <div class="dropdown">
+                <h5 id="genres-hover">Genres</h5>
+                <div class="dropdown-content" id="genres-container">
+                </div>
+              </div>
+            </li>
+
+            <li>
+            <div class="dropdown-sort-buttons">
+              <h5 id="sort-hover">Sort</h5>
+              <div class="dropdown-content-sort" id="sort-container">
+                  <button id="sort-1">A-Z</button>
+                  <button id="sort-2">Z-A</button>
+                  <button id="sort-3">Release Date</button>
+                  <button id="sort-4">Rating</button>
+              </div>
+            </div>
+            </li>
+
+          </ul>
+        </div>
+        <div class="top-nav top-nav-right width-2">
+          <li><input class="top-nav-search" type="text" id="search-bar"></li>
+          <li><h5></h5></li>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero-video">
+      <video autoplay muted loop id="hero-video-background">
+        <source src="video/hero-2.mp4" type="video/mp4">
+      </video>
+      <div class="hero-video-gradient"></div>
+      <div class="container-no-padding">
+        <div class="hero-text hero-text-2 width-5">
+          <h5>An Oopflix Original</h5>
+          <h1>THE NIGHT OF THE FINAL SUBMISSION</h1>
+          <p>
+            In the quaint and sleepy campus of IADT, where the flickering glow of computer screens is the only thing illuminating the late-night rooms, an unexpected
+            tragedy strikes. The murder of the old shows.js sends shockwaves through the tightly-knit community of Y1 Creative Computing, plunging it into discord and suspicion.
+          </p>
+        </div>
+      </div>
+    </section>
+
+      <div class="container-no-padding">
+        <div id="detail" class="width-12"></div>
+        <div id="main" class="mainjosh width-12"></div>
+      </div> <!-- Closes the Container Div -->
+      <script type="module" src="./js/shows.js" id="script"></script>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+<!-- Failed attempt at making the script swap with a button-->
+<!-- <script src="./js/swapper.js"></script> -->
+</html>
